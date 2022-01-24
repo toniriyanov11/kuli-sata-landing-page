@@ -8,7 +8,6 @@
     <meta name="generator" content="Hugo 0.84.0">
     <title>Kuli Sata</title>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
 
     
 
@@ -38,7 +37,7 @@
   <body>
     
 <header>
-  <nav class="navbar navbar-expand-md fixed-top bg-light py-2">
+  <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light py-2">
     <div class="container">
       <a class="navbar-brand" href="#">
         <img src="assets/brand/kulisata-logo.svg" alt="kulisata-logo">
@@ -48,15 +47,15 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav me-auto mb-2 mb-md-0">
-          <li class="nav-item">
+          <li class="nav-item px-3">
             <a class="nav-link active" aria-current="page" href="#">About Us</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item px-3">
             <a class="nav-link" href="#">FAQ</a>
           </li>
         </ul>
         <form class="d-flex">
-          <button class="btn btn-primary rounded-pill" type="submit">Download Aplikasi</button>
+          <button class="btn btn-primary rounded-pill px-lg-5" type="submit">Download Aplikasi</button>
         </form>
       </div>
     </div>
@@ -66,54 +65,37 @@
 <main>
 
   <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+        <div id="image-overlay"></div>
+        <img src="assets/dist/image/destination-hero-image.jpg" sty alt="hero image">
 
         <div class="container">
           <div class="carousel-caption text-start">
-            <h1>Example headline.</h1>
-            <p>Some representative placeholder content for the first slide of the carousel.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
-
-        <div class="container">
-          <div class="carousel-caption">
-            <h1>Another example headline.</h1>
-            <p>Some representative placeholder content for the second slide of the carousel.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
-
-        <div class="container">
-          <div class="carousel-caption text-end">
-            <h1>One more for good measure.</h1>
-            <p>Some representative placeholder content for the third slide of this carousel.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+            <div class="row">
+              <div class="col-sm-12 col-lg-6">     
+                <p id="carousel-title">Explore Destinasi
+                Impianmu hanya di  aplikasi Kulisata</p>
+                <p id="carousel-desc">
+                  Pengalaman trip yang seru dengan fitur Open trip dan Trip Planner, Pengalaman trip yang seru dengan fitur Open trip dan Trip Planner.
+                </p>
+              </div>
+              <div class="col-sm-12 col-lg-6">
+                <img id="front-hero-image" src="assets/dist/image/destionation-image-front.png" alt="hero image front">
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+    <!-- <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Previous</span>
     </button>
     <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
-    </button>
+    </button> -->
   </div>
 
 
