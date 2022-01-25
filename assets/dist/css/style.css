@@ -1,15 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
+
+/* VARIABLE */
+:root {
+  --color-primary : #fff;
+  --color-blue-basic : #0071BC;
+}
+
 /* GLOBAL STYLES
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
 
 body {
   padding-top: 4rem;
-  padding-bottom: 3rem;
-  color: #5a5a5a;
-  font: 18px "Poppins", sans-serif;
+  color: #000;
+  font: 16px "Poppins", sans-serif;
   scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+
+.color-blue-basic {
+  color: var(--color-blue-basic);
+}
+
+#icon-star {
+  background: url(../image/icon-star.svg);
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: bottom;
+  background-repeat: no-repeat;
+}
+
+#icon-map {
+  background: url(../image/icon-map.svg);
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  background-repeat: no-repeat;
 }
 
 
@@ -64,8 +94,7 @@ body {
   bottom: 0;
   width: 100%;
   z-index: 9;
-  background: linear-gradient(-90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.50) 100%), 
-  url('/assets/dist/image/destination-hero-image.jpg')
+  background: linear-gradient(-90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.50) 100%)
   ;
 }
 
@@ -83,42 +112,133 @@ body {
 }
 
 
-
-
-/* MARKETING CONTENT
+/* SECTION
 -------------------------------------------------- */
+section {
+  padding: 0 0 80px 0 ;
+}
 
-/* Center align the text within the three columns below the carousel */
-.marketing .col-lg-4 {
-  margin-bottom: 1.5rem;
+
+section .section__title{
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+section .section__desc{
+  font-size: .9rem;
+  font-weight: 400;
+  margin-bottom: 2.6rem;
+}
+
+
+
+
+/* DESTINATION
+------------------------- */
+section#destination .col {
+  display: flex;
+  justify-content: center;
+}
+
+section#destination .section__desc,
+section#destination .section__title {
   text-align: center;
 }
-.marketing h2 {
+
+.destination__card {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 40.04%, rgba(0, 0, 0, 0.8) 100%),
+  url('../image/destination-card-background.jpg');
+  border-radius: 20px;
+  padding: 2rem;
+  width: 19rem;
+  height: 23.18rem;
+  position: relative;
+  color: var(--color-primary);
+  overflow: hidden;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card__rating {
+  background-color: #fff;
+  color: #000;
+  padding: 6px;
+  position: absolute;
+  top: 27.5px;
+  left: 27.5px;
+  border-radius: 5px;
+  font-size: .8rem;
+  font-weight: 500;
+}
+
+.card__content {
+  position: absolute;
+  bottom: 27.5px;
+  left: 27.5px;
+}
+
+.destination__card > img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  object-fit: cover;
+  z-index: -1;
+}
+
+
+.card__content > .card__title {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.card__content > .card__location{
   font-weight: 400;
+  font-size: .8rem;
 }
-/* rtl:begin:ignore */
-.marketing .col-lg-4 p {
-  margin-right: .75rem;
-  margin-left: .75rem;
-}
-/* rtl:end:ignore */
 
 
-/* Featurettes
+
+/* PLANNER
 ------------------------- */
 
-.featurette-divider {
-  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+.planner__item {
+  margin-bottom: 3rem;
 }
 
-/* Thin out the marketing headings */
-.featurette-heading {
-  font-weight: 300;
-  line-height: 1;
-  /* rtl:remove */
-  letter-spacing: -.05rem;
+.planner__item div:nth-child(1) {
+  margin-right: 30px;
 }
 
+.planner__icon {
+  background: #fff;
+  padding: 14px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.planner__title {
+  color: var(--color-blue-basic);
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.planner__desc {
+  font-weight: 400;
+  font-size: .9rem;
+}
+
+
+/* DOWNLOAD
+------------------------- */
+#download  .section__title {
+  color: var(--color-blue-basic);
+}
+
+/* FOOTER
+------------------------- */
+footer {
+  background-color: var(--color-blue-basic);
+  display: flex;
+}
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
@@ -143,12 +263,22 @@ body {
     #front-hero-image {
       width: 20rem;
     }
+
+    section .section__title{
+      font-size: 2.3rem;
+    }
     
   
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+
+  body {
+    font: 18px "Poppins", sans-serif;
+  }
+  
+
   .featurette-heading {
     margin-top: 7rem;
   }
@@ -167,6 +297,10 @@ body {
 
   #front-hero-image {
     width: 35rem;
+  }
+
+  section .section__title{
+    font-size: 2.6rem;
   }
   
  }
