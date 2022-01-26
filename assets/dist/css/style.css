@@ -50,6 +50,11 @@ body {
   font-weight: 500;
 }
 
+.btn-download {
+  background-color: var(--color-blue-basic);
+  color: var(--color-primary);
+}
+
 
 
 /* CUSTOMIZE THE CAROUSEL
@@ -226,11 +231,20 @@ section#destination .section__title {
   font-size: .9rem;
 }
 
+#planner #planner-image {
+  width: 90%;
+  padding: 10px 0;
+}
+
 
 /* DOWNLOAD
 ------------------------- */
 #download  .section__title {
   color: var(--color-blue-basic);
+}
+
+#download #download-image {
+  width: 95%;
 }
 
 /* FOOTER
