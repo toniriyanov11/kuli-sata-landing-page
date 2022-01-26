@@ -252,6 +252,40 @@ section#destination .section__title {
 footer {
   background-color: var(--color-blue-basic);
   display: flex;
+  color: var(--color-primary);
+  padding: 2rem 0;
+}
+
+footer a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+footer p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+footer p.footer__title {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+footer a:hover > p{
+  color: var(--color-primary);
+  opacity: .7;
+}
+
+footer .icon {
+  display: inline-block;
+  background-color: var(--color-primary);
+  width: 3rem;
+  height: 3rem;
+  border-radius: 5rem;
+  position: relative;
+  padding: 10px 10px;
+  text-align: center;
+  margin: 0 10px;
 }
 
 /* RESPONSIVE CSS
@@ -315,6 +349,10 @@ footer {
 
   section .section__title{
     font-size: 2.6rem;
+  }
+
+  footer {
+    padding: 4rem 0;
   }
   
  }
