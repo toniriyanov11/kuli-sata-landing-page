@@ -288,6 +288,29 @@ footer .icon {
   margin: 0 10px;
 }
 
+
+
+/* TERMS & CONDITIONS
+------------------------- */
+.term__title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.term__content{
+  padding: 2.5rem 0;
+  text-align: justify;
+}
+
+.term__content  p:nth-child(1) {
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
@@ -353,6 +376,15 @@ footer .icon {
 
   footer {
     padding: 4rem 0;
+  }
+
+  .term__title {
+    font-size: 2.2rem;
+    margin-bottom: 4rem;
+  }
+
+  .term__content  p:nth-child(1) {
+    font-size: 1.7rem;
   }
   
  }
