@@ -141,8 +141,9 @@ body {
 }
 
 .carousel-item {
-  height: 40rem;
+  height: 35rem;
 }
+
 .carousel-item > img {
   position: relative;
   min-width: 100%;
@@ -411,6 +412,10 @@ footer .icon {
       font-size: 1.25rem;
       line-height: 1.4;
     }
+
+    .carousel-item {
+      height: 40rem;
+    }
   
     .featurette-heading {
       font-size: 50px;
@@ -434,9 +439,8 @@ footer .icon {
     font: 18px "Poppins", sans-serif;
   }
   
-
-  .featurette-heading {
-    margin-top: 7rem;
+  .carousel-item {
+    height: 40rem;
   }
 
   .carousel-caption {
