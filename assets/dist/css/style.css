@@ -207,8 +207,7 @@ section#destination .section__title {
 }
 
 .destination__card {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 40.04%, rgba(0, 0, 0, 0.8) 100%),
-  url('../image/destination-card-background.jpg');
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 40.04%, rgba(0, 0, 0, 0.8) 100%);
   border-radius: 20px;
   padding: 2rem;
   width: 19rem;
