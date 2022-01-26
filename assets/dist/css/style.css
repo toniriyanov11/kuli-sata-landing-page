@@ -4,7 +4,11 @@
 /* VARIABLE */
 :root {
   --color-primary : #fff;
+  --color-secondary : #212529;
   --color-blue-basic : #0071BC;
+  --color-orange-basic : #F7931E;
+  --color-green-basic : #39B54A;
+  --color-grey-basic : #7E7E7E;
 }
 
 /* GLOBAL STYLES
@@ -18,6 +22,58 @@ body {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
+
+
+/* boostrap custom changes */
+.nav-link {
+  color: var(--color-secondary);
+  font-weight: 400;
+  text-align: left;
+  font-size: .9rem;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+  background-color: unset !important;
+  color: var(--color-blue-basic);
+}
+
+.nav-link-tab {
+  padding-left: 0;
+  border-bottom: 2px solid #BEBEBE;
+}
+
+.accordion{
+  padding: 10px 0;
+  font-size: .9rem;
+}
+
+.accordion-item{
+  border: unset;
+  padding: 0 20px;
+}
+
+.accordion-button{
+  border-bottom: 2px solid #bebebe;
+}
+.accordion-button:after {
+  background-repeat: no-repeat;
+  background: url(../image/icon-plus.svg);
+  width: 1rem;
+  height: 1rem;
+}
+
+.accordion-button:not(.collapsed):after {
+  background-repeat: no-repeat;
+  background: url(../image/icon-minus.svg);
+  width: 1rem;
+  height: .3rem;
+}
+
+.card-body {
+  border: unset;
+  font-size: .9rem;
+}
+/* end boostrap custom changes */
 
 
 .color-blue-basic {
@@ -289,7 +345,6 @@ footer .icon {
 }
 
 
-
 /* TERMS & CONDITIONS
 ------------------------- */
 .term__title {
@@ -308,6 +363,37 @@ footer .icon {
   font-size: 1.4rem;
   font-weight: 600;
   text-align: center;
+}
+
+
+/* FAQ
+------------------------- */
+.faq__card {
+  background: var(--color-primary);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+}
+
+.faq__card__title {
+  background-color: var(--color-blue-basic);
+  color: var(--color-primary);
+  text-align: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-bottom: 0;
+  padding: ;
+}
+
+.faq__title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.faq__desc {
+  text-align: center;
+  color: var(--color-grey-basic);
 }
 
 
@@ -385,6 +471,10 @@ footer .icon {
 
   .term__content  p:nth-child(1) {
     font-size: 1.7rem;
+  }
+
+  .faq__title {
+    font-size: 2.2rem;
   }
   
  }
